@@ -18,9 +18,9 @@ app.use((req, res, next) => {
     //Express auto doda httpheader in zaključi response pošiljanje
 })
 
-const server = http.createServer(app)
+//create server & server listen nadomestimo z app.listen
 
-server.listen(3000)
+app.listen(3000)
 
 
 
